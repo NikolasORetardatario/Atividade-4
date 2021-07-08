@@ -1,0 +1,30 @@
+programa 
+{
+    
+	funcao inicio() {   
+    
+    inteiro peso_de_peixes = 0
+    inteiro excesso = 0
+    
+    
+    escreva("Qual o peso do seu peixe? \n")
+    leia(peso_de_peixes)
+    
+     excesso = (peso_de_peixes - 50) 
+     
+    se (peso_de_peixes < 50) { 
+        escreva("Seu peixe não será multado")
+    }
+     senao { 
+     escreva("\nSeu peixe excedeu a média de peso, você terá que pagar R$", excesso * 4.5)
+    
+         
+     }
+    
+    
+    escreva("\n\nVisão final: \nPeso : ", peso_de_peixes, "\nMulta: ", excesso * 4.5)
+    
+    
+    
+	}
+    }
