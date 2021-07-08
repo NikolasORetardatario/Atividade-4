@@ -1,0 +1,30 @@
+programa 
+{
+	
+	inclua biblioteca Matematica --> mat
+
+	funcao inicio() {
+		
+    real dinheiro, dolar, hp, conta
+    
+    dolar = 5.25
+    hp = 50
+    conta = dolar * 1300
+
+    conta = mat.arredondar(conta, 3)
+    
+    escreva("Quantos reais voce tem guardado? ")
+    leia(dinheiro)
+    se (dinheiro > conta) {
+        escreva("Dá para comprar um PS5 e ainda sobra ",dinheiro - conta )
+    }
+    se (dinheiro == conta) {
+        escreva("Já dá pra comprar um PS5 mas não sobra nada")
+    }
+    se (dinheiro < conta){ 
+    escreva("Falta ", conta - dinheiro, " reais pra você comprar um PS5")
+    }
+	escreva("\nO valor do PS5 dá para comprar ", conta / hp, " livros do Harry Potter e a Ordem da Fênix")
+    
+	}
+}
